@@ -17,8 +17,7 @@ const [search, setSearch] = useState("")
   const handleButton = () => {
     if(isURL(search)===true){
         navigate({
-        pathname: '/data',
-        search: `link=${search}`,
+        pathname: '/',
         
       });
       window.location.reload();
