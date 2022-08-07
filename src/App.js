@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [search, setSearch] = useState("");
+  const [theme, setTheme] = useState(false)
 
   return (
     <div>
@@ -14,9 +15,9 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Search setSearch={setSearch} search={search} />}
+            element={<Search theme={theme} setTheme={setTheme} setSearch={setSearch} search={search} />}
           />
-          <Route path="/data" element={<Data searches={search} setSearch={setSearch} />} />
+          <Route path="/data" theme={theme} setTheme={setTheme} element={<Data searches={search} setSearch={setSearch} />} />
           <Route path="/practise" element={<Practise/>} />
         </Routes>
       </Router>

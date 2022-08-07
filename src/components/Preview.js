@@ -25,12 +25,12 @@ const Preview = ({image, title, description, link}) => {
         bgcolor="white"
         justifyContent="center"
         alignItems="center"
-        width={{ xs: "90%", sm: "70%", md:"50%", lg: "30%" }}
+        width={{ xs: "90%", sm: "70%", md:"50%", lg: "32%" }}
 
         display="flex"
         flexDirection="column"
       >
-        <Stack  display="flex" justifyContent="center" width="90%" height="85%" bgcolor="">
+        <Stack mb="5px"  display="flex" justifyContent="center" width="90%" height="85%" bgcolor="">
           
           <img
             className="prev-img"
@@ -39,8 +39,8 @@ const Preview = ({image, title, description, link}) => {
           />
 
           <Stack p="5px" className="prev-item">
-            <Typography className="name">
-              {title}
+            <Typography textOverflow="hidden" className="name">
+              {`${title.slice(0, 48)}${".."}`}
             </Typography>
             <Typography className="description" variant="h7">
              {description}{"...."}
@@ -56,7 +56,7 @@ const Preview = ({image, title, description, link}) => {
           fontSize={{ xs: "16px", md: "20px" }}
           width="90%"
           overflow="hidden"
-          mt="15px"
+          mt={{xs:"20px", sm:"10px"}}
           pb="2px"
         >
           <a href="">

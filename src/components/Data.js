@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 import Preview from "./Preview";
 import InputBox from "./InputBox";
 
-const Data = ({ setSearch, searches }) => {
+const Data = ({ setSearch, theme}) => {
   const getHostname = (url) => {
     // use URL constructor and return hostname
     return new URL(url).hostname;
@@ -58,6 +58,7 @@ const Data = ({ setSearch, searches }) => {
       display="flex"
       justifyContent="center"
       flexDirection="column"
+      bgcolor={theme ?  "#F8E4C2" : "#00112B"}
     >
       {loading ? (
         <Preview

@@ -17,7 +17,7 @@ const ImageDataCard = ({ content }) => {
         >
           {content === "Not found" ? (
             <CancelOutlinedIcon
-              color="success"
+              color="error"
               sx={{ fontSize: { xs: 25, sm: 40 } }}
             />
           ) : (

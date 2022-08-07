@@ -3,10 +3,6 @@
   height: 90%;
 }
 
-.main-box {
-  background: var(--background);
-}
-
 
 .data-card {
   background-color: white;
@@ -104,7 +100,7 @@ li {
     font-size: 13px;
   }
   .searchBox > .searchInput {
-    width: 150px;
+    width: 60vw;
     padding: 0 6px;
   }
 }
