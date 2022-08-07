@@ -37,7 +37,7 @@ const Search = ({ setSearch, search, theme, setTheme}) => {
       </Stack>
 
       <Stack
-        sx={{ width: "100%", height: { xs: "96vh", sm: "94vh" } }}
+        sx={{ width: "100%", height: { xs: "93.5vh", sm: "94vh" } }}
         justifyContent="center"
         alignItems="center"
         display="flex"
