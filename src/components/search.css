@@ -1,0 +1,57 @@
+
+.dark-theme{
+    --background: #00112B;
+    
+
+}
+
+
+ 
+.search-box{
+    height: 50px;
+    width: 40vw;
+    border-radius: 15px;
+    border-color: transparent;
+
+    
+}
+.search-button{
+    height: 50px;
+    width: 10rem;
+    border-radius: 15px;
+    border-style: none;
+
+    
+}
+
+.search{
+    background: var(--background);
+    background-size: cover; 
+}
+
+
+
+
+.button{
+    width: 150px;
+
+}
+
+.logo{
+    background-image: url('../assets/logo.png');
+    background-size: cover;
+}
+.meta-text{
+    color: aqua;
+}
+.sub-heading{
+    color: rgb(182, 182, 182);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .search-box{
+        width: 80vw;
+        height: 40px;
+    }
+  }
