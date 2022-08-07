@@ -59,7 +59,7 @@ const Preview = ({image, title, description, link}) => {
           mt={{xs:"20px", sm:"7px"}}
           pb="10px"
         >
-          <a href={link}>
+          <a href=target="_blank" rel="noreferrer">
             {link}
           </a>
         </Typography>
