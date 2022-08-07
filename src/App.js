@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [search, setSearch] = useState("");
-  const [theme, setTheme] = useState(false)
+  const [theme, setTheme] = useState(true)
 
   return (
     <div>
