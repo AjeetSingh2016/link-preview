@@ -1,0 +1,26 @@
+{
+  "Bare-Act": {
+    "ActOn1": {
+      "Chapter1": {
+        "Section1": {
+          "Data": "Firebase is a great choice to start developing your mobile backend. This video will walk you through the process of adding and retrieving documents fro",
+          "Link": 6391
+        },
+        "section2": {
+          "Data": "Firebase is a great choice to start developing your mobile backend. This video will walk you through the process of adding and retrieving documents fr",
+          "Link": 6392
+        }
+      },
+      "Chapter2": {
+        "Section1": {
+          "Data": "My name is Ajeet Singh",
+          "link": 56565
+        },
+        "Section2": {
+          "Data": "Hello i am ajeet Singh",
+          "Link": 56565
+        }
+      }
+    }
+  }
+}

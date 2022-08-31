@@ -5,15 +5,11 @@
 
 }
 
-
- 
 .search-box{
     height: 50px;
     width: 40vw;
     border-radius: 15px;
     border-color: transparent;
-
-    
 }
 .search-button{
     height: 50px;
@@ -30,8 +26,6 @@
 } */
 
 
-
-
 .button{
     width: 150px;
 
@@ -42,7 +36,7 @@
     background-size: cover;
 }
 .meta-text{
-    color: aqua;
+    color: #00ffff;
 }
 .sub-heading{
     color: rgb(182, 182, 182);

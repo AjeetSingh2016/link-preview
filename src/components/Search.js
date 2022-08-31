@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import isURL from "validator/lib/isURL";
 import IconButton from "@mui/material/IconButton";
 import TipsAndUpdatesOutlinedIcon from '@mui/icons-material/TipsAndUpdatesOutlined';
-import { useEffect } from "react";
+import Footer from "./Footer";
 
 const Search = ({ setSearch, search, theme, setTheme}) => {
 
@@ -28,19 +28,14 @@ const Search = ({ setSearch, search, theme, setTheme}) => {
   };
 
   return (
-    <Box className="search" bgcolor={theme ? "#00112B" : "#2554C3"}>
-
-      <Stack width="100%" display="flex" alignItems="flex-end">
-          <IconButton onClick={() => theme ? setTheme(false) : setTheme(true)}  aria-label="delete" size="large">
-              <TipsAndUpdatesOutlinedIcon className="research-icon" />
-            </IconButton>
-      </Stack>
+    <Box className="search" bgcolor="#00112B">
 
       <Stack
-        sx={{ width: "100%", height: { xs: "93.5vh", sm: "100vh" } }}
+        sx={{ width: "100%", height: { xs: "100vh", sm: "100vh" } }}
         justifyContent="center"
         alignItems="center"
         display="flex"
+  
       >
         <Box mb="30px" className="logo" width="200px" height="200px"></Box>
 
@@ -76,6 +71,7 @@ const Search = ({ setSearch, search, theme, setTheme}) => {
             onChange={(e) => setSearch(e.target.value)}
             className="search-box"
             type="text"
+            
           />
 
           {invalid === true ? (
@@ -94,6 +90,7 @@ const Search = ({ setSearch, search, theme, setTheme}) => {
             Preview
           </Button>
         </Stack>
+        <Footer/>
       </Stack>
     </Box>
   );

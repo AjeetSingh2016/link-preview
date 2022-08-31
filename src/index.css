@@ -9,7 +9,6 @@ body {
   background-color: "#00112B";
 
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -17,4 +16,6 @@ code {
 
 * {
   margin-top: 0;
+  padding: 0;
+  
 }

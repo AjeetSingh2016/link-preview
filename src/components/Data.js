@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Box, Button } from "@mui/material";
+import { Stack, Box} from "@mui/material";
 import "./Data.css";
 import { useState, useEffect } from "react";
 import DataCard from "./DataCard";
@@ -10,7 +10,9 @@ import Preview from "./Preview";
 import InputBox from "./InputBox";
 
 const Data = ({ setSearch, theme}) => {
+
   const getHostname = (url) => {
+
     // use URL constructor and return hostname
     return new URL(url).hostname;
   };
@@ -32,22 +34,24 @@ const Data = ({ setSearch, theme}) => {
   const [loading, setLoading] = useState(false);
 
   const image = "og:image";
-  const site = "og:site_name";
-  const title = "og:title";
   const type = "og:type";
+
+  
 
   const description = "description";
 
+
+
   useEffect(() => {
+    setLoading(false);
     async function fetchData() {
       const response = await fetch(url, options);
       const fetchedData = await response.json();
-      console.log(link);
       setData({ ...fetchedData });
       setLoading(true);
     }
     fetchData();
-  }, []);
+  }, [link]);
 
   return (
     <Box
@@ -76,6 +80,8 @@ const Data = ({ setSearch, theme}) => {
       )}
 
       <InputBox setSearch={setSearch} searches={setSearch} />
+
+
       <Stack
         pb="20px"
         width="100%"
